@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap");
+
+* {
+  border: solid red 1px;
+}
+
+.wedge {
+  height: 300px;
+  background: #0991b1;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.headshot {
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.headshot img {
+  width: 100%;
+  height: auto;
+}
+
+.image-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.headshot h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Playfair";
+  font-weight: 400;
+  font-size: 50px;
+  z-index: 2;
+}
+
+p {
+  margin-top: 300px;
+}
